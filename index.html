@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBM Bob よくある質問</title>
+  <meta name="description" content="IBM Bobに関するよくある質問と回答をまとめています。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <a class="header-logo-link" href="https://www.ibm.com/products/bob" target="_blank" rel="noopener noreferrer" aria-label="IBM Bob 製品ページを開く (新規タブ)">
+          <img class="header-logo-img" src="bob.svg" alt="IBM Bob ロゴ" width="40" height="40">
+        </a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="ダークテーマに切り替える">
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-text">ダークテーマ</span>
+        </button>
+      </div>
+      <h1 class="site-title">IBM Bob よくある質問</h1>
+      <p class="site-description">Bobに関するよくある質問と回答をまとめています。</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search">
+      <label class="search-label" for="search-input">キーワードで検索</label>
+      <input id="search-input" class="search-input" type="search" placeholder="例: MCP" autocomplete="off">
+    </div>
+
+    <div id="category-tabs" class="tabs" role="tablist" aria-label="カテゴリ"></div>
+
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+
+    <div id="faq-list" class="faq-list" role="tabpanel"></div>
+
+    <p id="empty-message" class="empty-message" hidden>該当するFAQがありません</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>このFAQは <code>qa.md</code> を日本語に翻訳したものです。</p>
+    </div>
+  </footer>
+
+  <script src="faq-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
